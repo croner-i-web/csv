@@ -8,7 +8,7 @@ class CSVServiceProvider extends ServiceProvider
     /**
      * Indicates if loading of the provider is deferred.
      *
-     * @var bool
+     * @var boolean
      */
     protected $defer = false;
 
@@ -19,7 +19,6 @@ class CSVServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->package('mnshankar/CSV');
         $this->app['csv'] = $this->app->share(function () {
             return new CSV();
         });
@@ -32,7 +31,7 @@ class CSVServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array();
+        return [];
     }
 
 }
