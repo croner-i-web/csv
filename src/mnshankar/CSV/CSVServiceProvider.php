@@ -1,8 +1,14 @@
 <?php
+
 namespace mnshankar\CSV;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class CSVServiceProvider
+ *
+ * @package mnshankar\CSV
+ */
 class CSVServiceProvider extends ServiceProvider
 {
     /**
