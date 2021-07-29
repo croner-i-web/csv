@@ -25,7 +25,7 @@ class CSVServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['csv'] = $this->app->share(function () {
+        $this->app['csv'] = $this->app->singleton('csv', function () {
             return new CSV();
         });
     }
